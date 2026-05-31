@@ -1,0 +1,48 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+.Python
+
+# Environment file — contains secrets, never commit
+.env
+
+# ChromaDB vector store — runtime data, not source code
+memory/chroma_db/
+
+# Docker build artifacts
+*.tar
+
+# K3s and Kubernetes secrets — never commit real secrets
+k8s/secret.yaml
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+BLOG_CONTEXT.md

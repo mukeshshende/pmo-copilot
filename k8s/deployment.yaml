@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pmo-copilot
+  namespace: pmo-copilot
+  labels:
+    app: pmo-copilot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pmo-copilot
+  template:
+    metadata:
+      labels:
+        app: pmo-copilot
+    spec:
+      containers:
+        - name: pmo-copilot
+          image: pmo-copilot:v1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8501
+          envFrom:
+            - configMapRef:
+                name: pmo-config
+            - secretRef:
+                name: pmo-secrets
+          volumeMounts:
+            - name: data-volume
+              mountPath: /app/data
+            - name: chroma-volume
+              mountPath: /app/memory/chroma_db
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "1000m"
+          livenessProbe:
+            httpGet:
+              path: /_stcore/health
+              port: 8501
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /_stcore/health
+              port: 8501
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            failureThreshold: 3
+      volumes:
+        - name: data-volume
+          hostPath:
+            path: /home/m4hs4e/pmo-copilot/data
+            type: Directory
+        - name: chroma-volume
+          hostPath:
+            path: /home/m4hs4e/pmo-copilot/memory/chroma_db
+            type: Directory

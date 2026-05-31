@@ -1,0 +1,31 @@
+# Python virtual environment — never copy into container
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ChromaDB data — mounted as volume at runtime
+memory/chroma_db/
+
+# Git
+.git/
+.gitignore
+
+# Environment file — injected at runtime, not baked into image
+.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Test artifacts
+*.egg-info/
+dist/
+build/

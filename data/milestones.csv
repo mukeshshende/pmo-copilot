@@ -1,0 +1,41 @@
+milestone_id,project_id,milestone_name,planned_date,actual_date,status,delay_weeks
+MS001,PRJ001,Project kickoff,2025-02-03,2025-02-24,Delayed,3
+MS002,PRJ001,Requirements sign-off,2025-03-10,2025-03-10,On Time,0
+MS003,PRJ001,Architecture approved,2025-03-31,2025-03-31,On Time,0
+MS004,PRJ001,Development sprint 1 complete,2025-04-28,2025-05-26,Delayed,4
+MS005,PRJ001,Development sprint 2 complete,2025-05-19,2025-06-02,Delayed,2
+MS006,PRJ001,System integration testing,2025-06-30,2025-07-21,Delayed,3
+MS007,PRJ001,User acceptance testing,2025-08-25,2025-09-01,Delayed,1
+MS008,PRJ001,Go-live,2025-09-22,2025-09-22,On Time,0
+MS009,PRJ002,Project kickoff,2025-02-03,2025-02-10,Delayed,1
+MS010,PRJ002,Requirements sign-off,2025-03-10,2025-03-10,On Time,0
+MS011,PRJ002,Architecture approved,2025-04-28,2025-05-05,Delayed,1
+MS012,PRJ002,Development sprint 1 complete,2025-06-02,2025-06-02,On Time,0
+MS013,PRJ002,Development sprint 2 complete,2025-07-21,2025-08-11,Delayed,3
+MS014,PRJ002,System integration testing,2025-09-01,2025-09-01,On Time,0
+MS015,PRJ002,User acceptance testing,2025-10-27,2025-11-03,Delayed,1
+MS016,PRJ002,Go-live,2025-12-01,2025-12-22,Delayed,3
+MS017,PRJ003,Project kickoff,2025-02-10,2025-02-10,On Time,0
+MS018,PRJ003,Requirements sign-off,2025-03-03,2025-03-10,Delayed,1
+MS019,PRJ003,Architecture approved,2025-03-31,2025-04-14,Delayed,2
+MS020,PRJ003,Development sprint 1 complete,2025-04-21,2025-04-21,On Time,0
+MS021,PRJ003,Development sprint 2 complete,2025-06-09,2025-06-16,Delayed,1
+MS022,PRJ003,System integration testing,2025-07-21,2025-07-21,On Time,0
+MS023,PRJ003,User acceptance testing,2025-08-18,2025-08-18,On Time,0
+MS024,PRJ003,Go-live,2025-09-29,2025-10-06,Delayed,1
+MS025,PRJ004,Project kickoff,2025-02-03,2025-02-10,Delayed,1
+MS026,PRJ004,Requirements sign-off,2025-03-31,2025-04-21,Delayed,3
+MS027,PRJ004,Architecture approved,2025-05-05,2025-05-05,On Time,0
+MS028,PRJ004,Development sprint 1 complete,2025-06-16,2025-07-14,Delayed,4
+MS029,PRJ004,Development sprint 2 complete,2025-08-11,2025-08-25,Delayed,2
+MS030,PRJ004,System integration testing,2025-09-22,2025-09-22,On Time,0
+MS031,PRJ004,User acceptance testing,2025-10-27,2025-10-27,On Time,0
+MS032,PRJ004,Go-live,2025-12-22,2025-12-29,Delayed,1
+MS033,PRJ005,Project kickoff,2025-02-03,2025-02-24,Delayed,3
+MS034,PRJ005,Requirements sign-off,2025-03-24,2025-04-21,Delayed,4
+MS035,PRJ005,Architecture approved,2025-04-14,2025-04-21,Delayed,1
+MS036,PRJ005,Development sprint 1 complete,2025-05-05,2025-05-26,Delayed,3
+MS037,PRJ005,Development sprint 2 complete,2025-06-30,2025-06-30,On Time,0
+MS038,PRJ005,System integration testing,2025-07-21,2025-07-28,Delayed,1
+MS039,PRJ005,User acceptance testing,2025-09-15,2025-09-15,On Time,0
+MS040,PRJ005,Go-live,2025-11-10,2025-11-10,On Time,0

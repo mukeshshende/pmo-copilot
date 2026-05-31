@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: langfuse-postgres
+  namespace: pmo-copilot
+  labels:
+    app: langfuse-postgres
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: langfuse-postgres
+  template:
+    metadata:
+      labels:
+        app: langfuse-postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:15-alpine
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              value: "langfuse"
+            - name: POSTGRES_PASSWORD
+              value: "langfuse_pass"
+            - name: POSTGRES_DB
+              value: "langfuse"
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          readinessProbe:
+            exec:
+              command:
+                - pg_isready
+                - -U
+                - langfuse
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            failureThreshold: 6
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: langfuse-postgres-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: langfuse-postgres
+  namespace: pmo-copilot
+  labels:
+    app: langfuse-postgres
+spec:
+  type: ClusterIP
+  selector:
+    app: langfuse-postgres
+  ports:
+    - port: 5432
+      targetPort: 5432

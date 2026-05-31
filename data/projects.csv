@@ -1,0 +1,6 @@
+project_id,project_name,domain,budget,team_size,start_date,planned_end_date,status
+PRJ001,ERP Modernisation,Finance,2500000,12,2025-01-06,2025-11-10,On Track
+PRJ002,Customer Portal 2.0,CX,800000,6,2025-01-06,2025-06-23,Off Track
+PRJ003,Data Lake Migration,Data,1200000,8,2025-01-06,2025-08-18,On Track
+PRJ004,Mobile App Relaunch,Digital,600000,5,2025-01-06,2025-08-11,On Track
+PRJ005,Cybersecurity Uplift,Security,950000,7,2025-01-06,2025-12-01,On Track

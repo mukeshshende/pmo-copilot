@@ -1,0 +1,28 @@
+# Core LLM and agent frameworks
+langchain==0.3.25
+langchain-ollama==0.3.3
+langchain-community==0.3.24
+langchain-chroma==0.2.4
+crewai==0.86.0
+
+# Memory
+chromadb==1.5.9
+
+# Observability
+langfuse==2.36.2
+
+# UI
+streamlit==1.45.1
+
+# Data
+pandas==2.2.3
+faker==37.1.0
+
+# Config
+python-dotenv==1.1.0
+
+# HTTP
+requests==2.34.2
+
+# Required by crewai on Python 3.12
+setuptools==69.5.1

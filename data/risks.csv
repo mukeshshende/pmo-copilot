@@ -1,0 +1,35 @@
+risk_id,project_id,week_raised,risk_type,probability,impact,risk_score,status,mitigation_action
+RSK001,PRJ001,33,Budget overrun,0.84,0.91,0.76,Open,Request emergency budget review
+RSK002,PRJ001,19,Integration failure,0.39,0.38,0.15,Escalated,Escalate to integration lead
+RSK003,PRJ001,10,Regulatory compliance,0.46,0.99,0.46,Escalated,Engage compliance officer
+RSK004,PRJ001,36,Vendor delay,0.83,0.81,0.67,Mitigated,Issue vendor performance notice
+RSK005,PRJ001,39,Key person dependency,0.8,0.27,0.22,Closed,Cross-train secondary resource
+RSK006,PRJ001,5,Vendor delay,0.83,0.29,0.24,Mitigated,Issue vendor performance notice
+RSK007,PRJ001,11,Scope creep,0.36,0.62,0.22,Mitigated,Conduct formal change control review
+RSK008,PRJ002,32,Resource unavailability,0.17,0.61,0.1,Escalated,Engage backup resource from bench
+RSK009,PRJ002,9,Resource unavailability,0.51,0.57,0.29,Escalated,Engage backup resource from bench
+RSK010,PRJ002,20,Resource unavailability,0.68,0.52,0.35,Mitigated,Engage backup resource from bench
+RSK011,PRJ002,38,Scope creep,0.16,0.54,0.09,Open,Conduct formal change control review
+RSK012,PRJ002,5,Budget overrun,0.89,0.58,0.52,Escalated,Request emergency budget review
+RSK013,PRJ002,12,Technical debt,0.72,0.81,0.58,Closed,Schedule tech debt sprint
+RSK014,PRJ002,25,Technical debt,0.46,0.93,0.43,Escalated,Schedule tech debt sprint
+RSK015,PRJ002,6,Integration failure,0.65,0.73,0.47,Closed,Escalate to integration lead
+RSK016,PRJ003,12,Integration failure,0.89,0.51,0.45,Mitigated,Escalate to integration lead
+RSK017,PRJ003,1,Key person dependency,0.7,0.98,0.69,Escalated,Cross-train secondary resource
+RSK018,PRJ003,35,Key person dependency,0.4,0.38,0.15,Closed,Cross-train secondary resource
+RSK019,PRJ003,10,Scope creep,0.32,0.95,0.3,Open,Conduct formal change control review
+RSK020,PRJ004,40,Resource unavailability,0.71,0.91,0.65,Mitigated,Engage backup resource from bench
+RSK021,PRJ004,14,Key person dependency,0.15,0.68,0.1,Open,Cross-train secondary resource
+RSK022,PRJ004,16,Vendor delay,0.69,0.52,0.36,Mitigated,Issue vendor performance notice
+RSK023,PRJ004,4,Vendor delay,0.21,0.99,0.21,Closed,Issue vendor performance notice
+RSK024,PRJ004,37,Regulatory compliance,0.58,0.74,0.43,Mitigated,Engage compliance officer
+RSK025,PRJ004,20,Vendor delay,0.8,0.99,0.79,Escalated,Issue vendor performance notice
+RSK026,PRJ004,20,Integration failure,0.32,0.65,0.21,Escalated,Escalate to integration lead
+RSK027,PRJ005,32,Technical debt,0.14,0.48,0.07,Closed,Schedule tech debt sprint
+RSK028,PRJ005,27,Integration failure,0.43,0.44,0.19,Escalated,Escalate to integration lead
+RSK029,PRJ005,16,Integration failure,0.78,0.44,0.34,Escalated,Escalate to integration lead
+RSK030,PRJ005,4,Integration failure,0.55,0.97,0.53,Escalated,Escalate to integration lead
+RSK031,PRJ005,16,Scope creep,0.3,0.46,0.14,Escalated,Conduct formal change control review
+RSK032,PRJ005,24,Vendor delay,0.17,0.78,0.13,Open,Issue vendor performance notice
+RSK033,PRJ005,18,Resource unavailability,0.4,0.68,0.27,Open,Engage backup resource from bench
+RSK034,PRJ005,13,Vendor delay,0.74,0.67,0.5,Escalated,Issue vendor performance notice
