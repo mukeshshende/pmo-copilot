@@ -338,13 +338,52 @@ Open Langfuse → Traces. Click the `pmo-agent-run` trace. You will see:
 
 The UI wraps everything built in Parts 2–4 into a browser interface.
 
-| Page | Purpose |
-|---|---|
-| 🏠 Portfolio Overview | Live view of all CSV data — KPIs, tables, SPI trend chart |
-| 🤖 Single Agent | Ask questions, watch reasoning steps, see Final Answer |
-| 👥 Crew Analysis | Run the full 3-agent crew with progress tracking |
-| 🧠 Memory Browser | Search stored analyses semantically |
-| ℹ️ System Info | Connection health checks for all services |
+---
+
+#### 🏠 Portfolio Overview
+
+Live view of all CSV data — KPI metrics, colour-coded project status,
+SPI trend chart, open risks ranked by score, and delayed milestones.
+
+![Portfolio Overview](./images/01-portfolio-overview.png)
+
+---
+
+#### 🤖 Single Agent
+
+Ask any question about the portfolio. Memory context is shown if
+relevant past analyses exist. Tool calls are displayed as they happen.
+The Final Answer appears with full evidence cited.
+
+![Single Agent](./images/02-single-agent.png)
+
+---
+
+#### 👥 Crew Analysis
+
+Run the full three-agent crew. Select full portfolio or focus on a
+specific project. A progress bar tracks agent handoffs. The executive
+summary appears when all three agents complete.
+
+![Crew Analysis](./images/03-crew-analysis.png)
+
+---
+
+#### 🧠 Memory Browser
+
+Search stored analyses by meaning — not keywords. Results show the
+original question, analysis content, and timestamp.
+
+![Memory Browser](./images/04-memory-browser.png)
+
+---
+
+#### ℹ️ System Info
+
+Live connection health checks for Ollama, Langfuse, and ChromaDB.
+Configuration values and data file statistics.
+
+![System Info](./images/05-system-info.png)
 
 ### The Complete UI File — `ui/app.py`
 

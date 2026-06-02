@@ -25,7 +25,11 @@ You are encouraged to follow along, learn from it, and adapt it to your setup. R
 This is a learning lab, not a production system. Treat it as a starting point, not a blueprint.
 
 ---
+## Preview
 
+![PMO Copilot — Portfolio Overview](./docs/images/01-portfolio-overview.png)
+
+---
 ## Architecture
 
 ```
